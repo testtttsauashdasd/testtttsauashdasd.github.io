@@ -83,19 +83,7 @@ height: 60px;
     }
   
 
-@keyframes Sex {
-  0% {
-      transform: (1);
-  }
 
-  50% {
-      transform: scale(0.8);
-  }
-
-  100% {
-      transform: scale(1);
-  }
-}
 
 
   
