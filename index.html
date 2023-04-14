@@ -92,7 +92,7 @@
                                     </div>
                                     <div class="browser-window">
                                         <div class="w-layout-grid code-list text-color-slate-600">
-                                            <div class="w-layout-grid code-row">
+                                            <div class="w-layout-grid code-row" id="copy">
 
                                                    loadstring(game:HttpGet("https://orbituniverse.com/spacehub"))()</div>
                                             </div>
@@ -101,10 +101,25 @@
                                         </div>
                                     </div>
                                 </div>
+                                <p id="w-node-_6075894e-b50c-f6cd-5cef-806f89e630c9-b08e5ac1" button type="button"  class=""></p><a button type="button" onclick="copyEvent('copy')"
+                                    class="button-animated large w-inline-block">
+                                    <div class="button-label">Copy Script</div>
+                                    <div class="button-hover-background"></div>
+                                    
+                                </a>
                             </div>
-                            <p id="w-node-_6075894e-b50c-f6cd-5cef-806f89e630c9-b08e5ac1" class="text-lg">Space Hub</p><a href="/"
+                            
+                         
+                            <script>
+                                function copyEvent(id)
+                                {
+                                    var str = document.getElementById(id);
+                                    window.getSelection().selectAllChildren(str);
+                                    document.execCommand("Copy")
+                                }
+                            </script>
                                 
-                                class="button-hover-background"></div>
+                            
                             </a>
                         </div>
                     </div>
